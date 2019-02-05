@@ -7,7 +7,7 @@ class Header extends React.Component {
     super(props)
 
     this.state = {
-      hasScrolled: false;
+      hasScrolled: false
     }
   }
 
@@ -30,14 +30,12 @@ class Header extends React.Component {
       <div className={this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'}>
         <div className="HeaderGroup">
           <Link to="/">
-            <img width="30" src={require('../images/logo-designcode.svg')} />
+            <img src={require('../images/logo-designcode.svg')} width="30" />
           </Link>
           <Link to="/courses">Courses</Link>
           <Link to="/downloads">Downloads</Link>
           <Link to="/workshops">Workshops</Link>
-          <Link to="/buy">
-            <button>Buy</button>
-          </Link>
+          <Link to="/buy"><button>Buy</button></Link>
         </div>
       </div>
     )
